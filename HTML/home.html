@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catiau</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(0, 5, 48);
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h2>Página Principal</h2>
+    <h4>Seja Bem Vindo, {{ .Nome }}</h4>
+    <button id="botao">Clique em mim</button>
+
+    <script>
+        var botao = document.getElementById("botao")
+        botao.onclick = function(){
+            alert("Sai fora, ta clicando no meu botão aí seu corno")
+        }
+    </script>
+</body>
+</html>
